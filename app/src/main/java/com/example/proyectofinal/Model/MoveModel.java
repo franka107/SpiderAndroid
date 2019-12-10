@@ -1,10 +1,10 @@
-package com.example.proyectofinal;
+package com.example.proyectofinal.Model;
 
-public class PostModel {
+public class MoveModel {
     private int robot;
     private String direction;
 
-    public PostModel(String direction , int robot) {
+    public MoveModel(String direction , int robot) {
         this.direction = direction;
         this.robot = robot;
     }

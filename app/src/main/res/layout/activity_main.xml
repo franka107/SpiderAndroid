@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".View.MainActivity">
 
     <ImageView
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#9E000000"
+        android:background="#d8000000"
         android:gravity="center"
         android:orientation="vertical"
         android:paddingLeft="10dp"
@@ -42,25 +42,81 @@
             android:paddingBottom="20dp"
             app:srcCompat="@drawable/logo" />
 
+        <!--<com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:passwordToggleTint="#FFFFFF">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/input"
+                android:hint="Usuario"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14dp" />
+        </com.google.android.material.textfield.TextInputLayout>-->
         <EditText
-            android:id="@+id/et_correo"
+            android:id="@+id/txtUsuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="15dp"
             android:background="@drawable/input"
-            android:hint="Correo electrónico"
+            android:hint="Usuario"
             android:inputType="textEmailAddress"
             android:paddingLeft="20dp"
             android:paddingTop="10dp"
             android:paddingRight="10dp"
             android:paddingBottom="10dp"
             android:textColor="#fff"
-            android:textColorHint="#ccc" />
+            android:textColorHint="#ccc"
+            android:textSize="14dp" />
+
+        <!--<com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#FFFFFF">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/input"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textColorLink="#FFFFFF"
+                android:textSize="14dp" />
+        </com.google.android.material.textfield.TextInputLayout>-->
 
         <EditText
-            android:id="@+id/et_contrasena"
+            android:id="@+id/txtContraseña"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -74,7 +130,8 @@
             android:paddingRight="10dp"
             android:paddingBottom="10dp"
             android:textColor="#fff"
-            android:textColorHint="#ccc" />
+            android:textColorHint="#ccc"
+            android:textSize="14dp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -115,7 +172,7 @@
                 android:textSize="16sp" />
 
             <Button
-                android:id="@+id/btn_ir_crearCuenta"
+                android:id="@+id/btnCrearCuenta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -124,6 +181,8 @@
                 android:textColor="#ed8d10" />
 
         </LinearLayout>
+
+
     </LinearLayout>
 
 </RelativeLayout>
