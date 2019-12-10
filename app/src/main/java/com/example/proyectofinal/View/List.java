@@ -16,6 +16,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.proyectofinal.Light;
 import com.example.proyectofinal.R;
 
 import org.json.JSONArray;
@@ -40,6 +41,13 @@ public class List extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), Move.class);
+                startActivity(intent);
+            }
+        });
+        btnCargar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), Light.class);
                 startActivity(intent);
             }
         });
@@ -94,7 +102,7 @@ public class List extends AppCompatActivity {
         });
     }
 
-    public void enviarIdMove(View v){
+   /* public void enviarIdMove(View v){
         AsyncTask.execute(new Runnable() {
             @Override
             public void run() {
@@ -127,6 +135,6 @@ public class List extends AppCompatActivity {
                 queue.add(stringRequest);
             };
         });
-    }
+    }*/
 
 }

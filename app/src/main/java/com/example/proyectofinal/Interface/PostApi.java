@@ -2,6 +2,7 @@ package com.example.proyectofinal.Interface;
 
 
 import com.example.proyectofinal.Model.AuthModel;
+import com.example.proyectofinal.Model.FocusModel;
 import com.example.proyectofinal.Model.MoveModel;
 import com.example.proyectofinal.Model.RegisterModel;
 
@@ -33,4 +34,7 @@ public interface PostApi {
     Call<AuthModel> token(@Field(value="grant_type",encoded = true) String grant_type, @Field(value="username",encoded = true) String username,
                           @Field(value = "password",encoded = true) String password, @Field(value = "client_id",encoded = true) String client_id,
                           @Field(value = "client_secret",encoded = true) String client_secret);
+
+    @PUT("api/channels/{id}/")
+    Call<FocusModel> focusPost(@Body FocusModel focusModel, @Path(value = "id", encoded = true) String id);
 }
